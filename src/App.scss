@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a {
+  text-decoration: none;
+}
+.s{
+
+}
+.navbar{
+  z-index: 10;
+  .Search{
+      top:80px;
+      left:-1400px;
+  z-index:-99999;
+  opacity: 0;
+  transition: 1s ease;
+
+  }
+  &.active{
+    .Search{
+      top:80px;
+      opacity: 1;
+      left:0;
+    }
+  }
+}
+
+
+/* CSS */
+.button-23 {
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 2px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 10px;
+
+  outline: none;
+  padding: 0 13px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+ 
+  opacity: 1;
+}
+.slick-dots{
+  top:92vh;
+}
+.slick-dots li  {
+  width: 40px;
+  height: 40px;
+}
+.first{
+  border-right:2px solid crimson;
+}
