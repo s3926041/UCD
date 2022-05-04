@@ -3,8 +3,10 @@ import { useState } from "react";
 import logo from "../logo.png"
 import CloseIcon from "@mui/icons-material/Close";
 import SearchIcon from "@mui/icons-material/Search";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Navbar() {
+  const err = () => toast.error('This section is currently not available');
     const settings = {
         dots: true,
         infinite: true,
@@ -17,74 +19,65 @@ function Navbar() {
        
       };
       const [searchClicked, setSearchClicked] = useState(false);
-      const aleart = () =>{
-        alert('This section does not working at the moment!')
-      }
+      
   return (
     <div className="">
          <div className="busHour h-[45px] fixed bg-[grey] w-full leading-3 flex justify-center items-center z-[99] opacity-[0.95]">
-          <p className="">
+          <p className="ml-[50px]">
           <span className="text-[18px] text-center font-bold">Business Hour:</span>
 <br />
           <span className="text-[13px]">Tuesday, Wednesday, Thursday, Saturday, Sunday: From <span className="font-bold">8h00 - 11h30AM</span> . Monday and Friday closed</span>
           </p>
-          <button onClick={aleart} className="mx-[50px] button-23" role="button">BOOK TICKET</button>
+          <a href="/booking"><button className="ml-[10px] button-23" role="button">BOOK TICKET</button></a>
           
 
         </div>
         <div
           className={
-            "navbar fixed h-[70px] mt-[40px] w-full bg-[#82173b] flex-col opacity-75 " +
+            "navbar fixed h-[70px] mt-[40px] w-full bg-[#82173b] flex-col opacity-[0.95] " +
             (searchClicked && "active")
           }
         >
           <div className="links h-[70px] text-white flex items-center justify-center  ">
-            <a href="/UCD"><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
-            <a
-            
+            <a href="/"><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
+            <a           
               href="/about"
               className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               About us
             </a>
             <a
-              onClick={aleart}
-              href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
+              href='/exhibition'
+             
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px] cursor-pointer"
             >
               Exhibition
             </a>
             <a
-              onClick={aleart}
-              href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
+              onClick={err}
+             
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px] cursor-pointer"
             >
               3D Tour
             </a>
             
             <a
-              onClick={aleart}
-              href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
+              onClick={err}
+             
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px] cursor-pointer"
             >
               Library
             </a>
             <a
-              onClick={aleart}
-              href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
+              onClick={err}
+             
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px] cursor-pointer"
             >
               Supports
             </a>
-            <a
-              onClick={aleart}
-              href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
-            >
-              Contact
-            </a>
+            
             <SearchIcon
-              className="s cursor-pointer hover:opacity-75 duration-300 ease-linear text-[20px]"
+              className="s cursor-pointer hover:opacity-75 duration-300 ease-linear text-[20px] "
               onClick={() => {
                 setSearchClicked(!searchClicked);
               }}

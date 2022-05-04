@@ -3,9 +3,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import trip from "../trip.png";
+import toast,{Toaster} from "react-hot-toast";
 function Footer() {
+  const success = () => toast.success('Submitted')
   return (
-    <footer className="h-[200px] w-full bg-[#c2c1c0]">
+    <footer className="h-[200px] w-full bg-[#c2c1c0] z-30">
       <div className="flex w-[75vw] h-full mx-[12.5vw] ">
         <div className="information w-[25vw] p-20px mt-[20px]">
           <h1 className="font-bold text-[20px]">Ho Chi Minh Museum</h1>
@@ -15,7 +17,7 @@ function Footer() {
           <span>www.baotanghochiminh.vn</span></p>
           
         </div>
-        <div className="email w-[25vw] p-20px mt-[20px]">
+        <div className="email w-[25vw] p-20px mt-[20px] flex flex-col">
           <h1 className="font-bold text-[20px]">SIGN UP FOR THE NEWSLETTER</h1>
           <input
             type="text"
@@ -25,9 +27,7 @@ function Footer() {
           <button
             class="button-5"
             role="button"
-            onClick={() => {
-              alert("Submited!");
-            }}
+            onClick={success}
           >
             Submit
           </button>
@@ -53,6 +53,9 @@ function Footer() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="bottom-0 h-[40px] bg-[crimson] w-full">
+        <div className="w-[75vw] mx-[12.5vw] grid place-items-end items-center"><h1 className="font-bold text-[20px]">Designed by Hung</h1></div>
       </div>
     </footer>
   );

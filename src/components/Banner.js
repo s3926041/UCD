@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import banner from '../banner.png'
 function Banner() {
     const settings = {
         dots: true,
@@ -16,18 +17,16 @@ function Banner() {
       };
   return (
     <Slider className="" {...settings}>
-    <div>
-      <img src="https://baotanghochiminh.vn/pic/banner/Anh2-chup_637238721338045237.jpg" alt="" className="w-[100vw] h-[97vh]" />
-    </div>
+      <div className="">
+        <a href="/exhibition"><img src={banner} className="w-[100vw] h-[97vh]" alt="" /></a>
+      </div>
+    
     <div>
     <img src="https://baotanghochiminh.vn/pic/banner/demo-anh_636838400585939931.jpg" alt="" className="w-[100vw] h-[97vh]" />
     </div>
-    <div>
-    <img src="https://baotanghochiminh.vn/pic/banner/anhb_636838400314811455.jpg" alt="" className="w-[100vw] h-[97vh]" />
-    </div>
-    <div>
-    <img src="https://baotanghochiminh.vn/pic/banner/636550803_636589817116186361.jpg" alt="" className="w-[100vw] h-[97vh]" />
-    </div>
+    
+    
+    
   </Slider>
   )
 }
