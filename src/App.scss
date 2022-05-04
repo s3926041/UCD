@@ -40,7 +40,7 @@ a {
 
 /* CSS */
 .button-23 {
-  height: 30px;
+  height: 35px;
   background-color: #FFFFFF;
   border: 2px solid #222222;
   border-radius: 8px;
@@ -85,10 +85,62 @@ a {
 .slick-dots{
   top:92vh;
 }
-.slick-dots li  {
-  width: 40px;
-  height: 40px;
+.slick-dots li button:before
+{
+ 
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 0px;
+    width: 40px;
+    height: 40px;
 }
 .first{
   border-right:2px solid crimson;
+}
+
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: crimson;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 0;
+  margin: 10px 0;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fa0000;
+  
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+
+  transform: translateY(0);
 }

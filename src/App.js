@@ -1,18 +1,17 @@
 import "./App.scss";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import Middle from "./components/Middle";
+import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
-
 function App() {
   return (
     <div className="App ">
       <Router>
         <Navbar/>
-        <Banner/>
-        <Middle/>
-        <Footer/>
+       <Routes>
+         <Route path="/UCD" element={<Homepage/>}></Route>
+       </Routes>
+       <Footer/>
       </Router>
     </div>
   );

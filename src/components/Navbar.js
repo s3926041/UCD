@@ -22,11 +22,11 @@ function Navbar() {
       }
   return (
     <div className="">
-         <div className="busHour h-[40px] fixed bg-[grey] w-full leading-3 flex justify-center items-center z-[99] opacity-[0.95]">
+         <div className="busHour h-[45px] fixed bg-[grey] w-full leading-3 flex justify-center items-center z-[99] opacity-[0.95]">
           <p className="">
-          <span className="text-[14px] text-center font-bold">Business Hour:</span>
+          <span className="text-[18px] text-center font-bold">Business Hour:</span>
 <br />
-          <span className="text-[11px]">Tuesday, Wednesday, Thursday, Saturday, Sunday: From <span className="font-bold">8h00 - 11h30AM</span> . Monday and Friday closed</span>
+          <span className="text-[13px]">Tuesday, Wednesday, Thursday, Saturday, Sunday: From <span className="font-bold">8h00 - 11h30AM</span> . Monday and Friday closed</span>
           </p>
           <button onClick={aleart} className="mx-[50px] button-23" role="button">BOOK TICKET</button>
           
@@ -39,25 +39,25 @@ function Navbar() {
           }
         >
           <div className="links h-[70px] text-white flex items-center justify-center  ">
-            <a href="."><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
+            <a href="/UCD"><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
             <a
-              onClick={aleart}
-              href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300"
+            
+              href="/about"
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               About us
             </a>
             <a
               onClick={aleart}
               href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300"
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               Exhibition
             </a>
             <a
               onClick={aleart}
               href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300"
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               3D Tour
             </a>
@@ -65,28 +65,28 @@ function Navbar() {
             <a
               onClick={aleart}
               href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300"
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               Library
             </a>
             <a
               onClick={aleart}
               href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300"
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               Supports
             </a>
             <a
               onClick={aleart}
               href="#"
-              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300"
+              className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               Contact
             </a>
             <SearchIcon
-              className="s cursor-pointer hover:opacity-75 duration-300 ease-linear"
+              className="s cursor-pointer hover:opacity-75 duration-300 ease-linear text-[20px]"
               onClick={() => {
-                setSearchClicked(true);
+                setSearchClicked(!searchClicked);
               }}
             ></SearchIcon>
           </div>
