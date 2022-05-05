@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
@@ -12,12 +12,13 @@ function App() {
     <div className="App ">
       <Router>
         <Navbar/>
+      console.log('hung')
        <Routes>
          <Route path="/UCD" element={<Homepage/>}></Route>
-         <Route path='UCD/about' element={<About/>}></Route>
+         <Route path='UCD/about' element={<About/>}></Route> 
          <Route path='UCD/exhibition' element={<Exhibition/>}></Route>
-         <Route path="/UCD/booking" element={<Booking/>}></Route>
-         <Route path="/UCD/contact" element={<Contact/>}></Route>
+         <Route path="/UCD/#booking" element={<Booking/>}></Route>
+         <Route path="/UCD/#contact" element={<Contact/>}></Route>
        </Routes>
        <Footer/>
       </Router>

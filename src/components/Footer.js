@@ -25,7 +25,7 @@ function Footer() {
             className="w-[300px] rounded-md mt-3"
           />
           <button
-            class="button-5"
+            className="button-5"
             role="button"
             onClick={success}
           >
