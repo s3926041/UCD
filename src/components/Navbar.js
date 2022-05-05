@@ -23,7 +23,7 @@ function Navbar() {
       
   return (
     <div className="">
-         <div className="busHour h-[45px] fixed bg-[grey] w-full leading-3 flex justify-center items-center z-[99] opacity-[0.95]">
+         <div className="busHour h-[45px] fixed bg-[grey] w-full leading-3 flex justify-center items-center  opacity-[0.95] z-[20]">
           <p className="ml-[50px]">
           <span className="text-[18px] text-center font-bold">Business Hour:</span>
 <br />

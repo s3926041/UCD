@@ -7,10 +7,12 @@ import About from "./components/About";
 import Exhibition from "./components/Exhibition";
 import Booking from "./components/Booking";
 import Contact from "./components/Contact";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <div className="App ">
       <Router>
+        <Toaster position="top-center"/>
         <Navbar/>
        <Routes>
          <Route path="/" element={<Homepage/>}></Route>

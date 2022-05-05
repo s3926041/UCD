@@ -148,7 +148,7 @@ function Middle() {
         ></iframe>
       </div>
       <Toaster
-      position="top-right"/>
+      />
     </div>
   );
 }

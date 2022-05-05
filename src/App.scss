@@ -23,7 +23,7 @@ a {
   .Search{
       top:80px;
       left:-1400px;
-  z-index:-99999;
+ 
   opacity: 0;
   transition: 1s ease;
 
@@ -125,7 +125,8 @@ a {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: 300px;
+  width: 100px;
+  &.sew{width: 300px;}
   border-radius: 10px;
 }
 
@@ -270,4 +271,8 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+footer{
+
 }

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import banner from '../banner.png'
+import { BrowserRouter as Router, Route, Routes,Link} from "react-router-dom";
 function Banner() {
     const settings = {
         dots: true,
@@ -18,7 +19,7 @@ function Banner() {
   return (
     <Slider className="" {...settings}>
       <div className="">
-        <a href="/exhibition"><img src={banner} className="w-[100vw] h-[97vh]" alt="" /></a>
+        <Link to="/exhibition"><img src={banner} className="w-[100vw] h-[97vh]" alt="" /></Link>
       </div>
     
     <div>

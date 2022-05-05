@@ -2,13 +2,13 @@ import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 function Exhibition() {
   return (
-    <div className=" h-[100vh] relative ">
+    <div className="min-h-[800px] 2xl:min-h[1000px] relative z-[0] ">
       <Toaster className="" />
-      <div className="top-[120px] absolute w-[75vw] mx-[12.5vw] h-full">
-        <h1 className="font-bold text-[crimson] text-[40px] text-center mt-[30px]">
+      <div className="top-[120px] absolute w-[75vw] mx-[12.5vw] h-[40vh] z-[0]">
+        <h1 className="font-bold text-[crimson] text-[40px] 2xl:text-[60px] text-center ">
           Exhibition
         </h1>
-        <div className="grid grid-cols-2 place-items-center">
+        <div className="grid grid-cols-2  place-items-center">
           <div className="my-[40px]">
             <div className="sketchfab-embed-wrapper ">
               {" "}
@@ -61,7 +61,7 @@ function Exhibition() {
             <div className="sketchfab-embed-wrapper">
               {" "}
               <iframe
-              className="rounded-[1rem]"
+                className="rounded-[1rem]"
                 title="The Atis Artifact"
                 frameBorder="0"
                 allowFullscreen
@@ -102,6 +102,7 @@ function Exhibition() {
             </div>
             <h1 className="font-bold text-center">Ancient Artifact</h1>
           </div>
+      
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import toast,{Toaster} from "react-hot-toast";
 function Footer() {
   const success = () => toast.success('Submitted')
   return (
-    <footer className="h-[200px] w-full bg-[#c2c1c0] z-30">
+    <footer className="h-[200px] w-full bg-[#c2c1c0] ">
       <div className="flex w-[75vw] h-full mx-[12.5vw] ">
         <div className="information w-[25vw] p-20px mt-[20px]">
           <h1 className="font-bold text-[20px]">Ho Chi Minh Museum</h1>
@@ -22,10 +22,10 @@ function Footer() {
           <input
             type="text"
             placeholder="Enter your email"
-            className="w-[300px] rounded-md mt-3"
+            className="w-[300px] rounded-md mt-3 "
           />
           <button
-            className="button-5"
+            className="button-5 sew"
             role="button"
             onClick={success}
           >
