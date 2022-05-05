@@ -1,7 +1,7 @@
 import React from "react";
 import thumbnail from "../thumbnail.png";
 import toast, { Toaster } from 'react-hot-toast';
-
+import { BrowserRouter as Router, Route, Routes,Link} from "react-router-dom";
 function Middle() {
     const err = () => toast.error('This section is currently not available');
   return (
@@ -117,9 +117,9 @@ function Middle() {
       </div>
       <div className="mb-[80px] mt-[60px] flex  ml-[12.5vw] w-[75vw]">
         <div className="grid grid-cols-3 w-[60vw]">
-          <a href='/contact' className="border-2 mx-4 my-4 font-bold text-[12px] xl:text-[20px] grid place-items-center rounded-[1rem] bg-transparent translate-y-[20px] hover:translate-y-1 duration-200 box-shadow cursor-pointer text-center ">
+          <Link to='/contact' className="border-2 mx-4 my-4 font-bold text-[12px] xl:text-[20px] grid place-items-center rounded-[1rem] bg-transparent translate-y-[20px] hover:translate-y-1 duration-200 box-shadow cursor-pointer text-center ">
             Contact
-          </a>
+          </Link>
           <div onClick={err} className="border-2 mx-4 my-4 font-bold text-[12px] xl:text-[20px] grid place-items-center rounded-[1rem] bg-transparent translate-y-[20px] hover:translate-y-1 duration-200 box-shadow cursor-pointer text-center ">
             Museum System
           </div>

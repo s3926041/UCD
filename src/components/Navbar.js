@@ -4,6 +4,7 @@ import logo from "../logo.png"
 import CloseIcon from "@mui/icons-material/Close";
 import SearchIcon from "@mui/icons-material/Search";
 import toast, { Toaster } from 'react-hot-toast';
+import { BrowserRouter as Router, Route, Routes,Link} from "react-router-dom";
 
 function Navbar() {
   const err = () => toast.error('This section is currently not available');
@@ -28,7 +29,7 @@ function Navbar() {
 <br />
           <span className="text-[13px]">Tuesday, Wednesday, Thursday, Saturday, Sunday: From <span className="font-bold">8h00 - 11h30AM</span> . Monday and Friday closed</span>
           </p>
-          <a href="/booking"><button className="ml-[10px] button-23" role="button">BOOK TICKET</button></a>
+          <Link to="/booking"><button className="ml-[10px] button-23" role="button">BOOK TICKET</button></Link>
           
 
         </div>
@@ -39,20 +40,19 @@ function Navbar() {
           }
         >
           <div className="links h-[70px] text-white flex items-center justify-center  ">
-            <a href="/"><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
-            <a           
-              href="/about"
+            <Link to='/'><img src={logo} alt="" className="h-[50px] mx-[20px]" /></Link>
+            <Link to='/about'
               className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               About us
-            </a>
-            <a
-              href='/exhibition'
+            </Link>
+            <Link to='/exhibition'
+              
              
               className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px] cursor-pointer"
             >
               Exhibition
-            </a>
+            </Link>
             <a
               onClick={err}
              

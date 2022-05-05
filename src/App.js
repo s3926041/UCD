@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,Link} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
@@ -12,7 +12,6 @@ function App() {
     <div className="App ">
       <Router>
         <Navbar/>
-    
        <Routes>
          <Route path="/" element={<Homepage/>}></Route>
          <Route path='/about' element={<About/>}></Route> 
