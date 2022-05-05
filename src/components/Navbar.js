@@ -39,15 +39,15 @@ function Navbar() {
           }
         >
           <div className="links h-[70px] text-white flex items-center justify-center  ">
-            <a href="/"><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
+            <a href="/UCD"><img src={logo} alt="" className="h-[50px] mx-[20px]" /></a>
             <a           
-              href="/about"
+              href="/UCD/about"
               className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px]"
             >
               About us
             </a>
             <a
-              href='/exhibition'
+              href='/UCD/exhibition'
              
               className="link mx-[20px] font-bold hover:opacity-75 ease-linear duration-300 text-[20px] cursor-pointer"
             >
