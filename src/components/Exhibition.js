@@ -2,7 +2,7 @@ import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 function Exhibition() {
   return (
-    <div className="min-h-[800px] 2xl:min-h[1000px] relative z-[0] ">
+    <div className="min-h-[1000px] relative z-[0] ">
       <Toaster className="" />
       <div className="top-[120px] absolute w-[75vw] mx-[12.5vw] h-[40vh] z-[0]">
         <h1 className="font-bold text-[crimson] text-[40px] 2xl:text-[60px] text-center ">

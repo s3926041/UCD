@@ -6,7 +6,7 @@ function Contact() {
         toast.success('Submitted!')
     }
   return (
-    <div className=" h-[100vh] relative ">
+    <div className=" h-[1150px] relative ">
       <Toaster  />
       <div className="top-[120px] 2xl:top-[250px] absolute w-[75vw] mx-[12.5vw] h-[40vh]">
         <h1 className="font-bold text-[crimson] text-[40px] 2xl:text-[60px] text-center mt-[30px]">
