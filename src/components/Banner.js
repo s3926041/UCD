@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import banner from '../banner.png'
 import { BrowserRouter as Router, Route, Routes,Link} from "react-router-dom";
+import image1 from '../images1.jpg'
+import image2 from '../images2.jpg'
+import image3 from '../images3.jpg'
+import image4 from '../images4.jpg'
 function Banner() {
     const settings = {
         dots: true,
@@ -18,14 +22,24 @@ function Banner() {
       };
   return (
     <Slider className="" {...settings}>
-      <div className="">
-        <Link to="/exhibition"><img src={banner} className="w-[100vw] h-[97vh]" alt="" /></Link>
-      </div>
+      
     
     <div>
-    <img src="https://baotanghochiminh.vn/pic/banner/demo-anh_636838400585939931.jpg" alt="" className="w-[100vw] h-[97vh]" />
+    <img src={image1} alt="" className="w-[100vw] h-[97vh]" />
+    </div>
+    <div className="">
+    <img src={image4} alt=""className="w-[100vw] h-[97vh]" />
+    </div>
+    <div className="">
+    <img src={image2} alt=""className="w-[100vw] h-[97vh]" />
+    </div>
+    <div className="">
+    <img src={image3} alt=""className="w-[100vw] h-[97vh]" />
     </div>
     
+    <div className="">
+        <Link to="/exhibition"><img src={banner} className="w-[100vw] h-[97vh]" alt="" /></Link>
+      </div>
     
     
   </Slider>
