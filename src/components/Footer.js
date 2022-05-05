@@ -55,7 +55,7 @@ function Footer() {
         </div>
       </div>
       <div className="bottom-0 h-[40px] bg-[crimson] w-full">
-        <div className="w-[75vw] mx-[12.5vw] grid place-items-end items-center"><h1 className="font-bold text-[20px]">Designed by Hung</h1></div>
+        <div className="w-[75vw] mx-[12.5vw] grid place-items-end items-center"></div>
       </div>
     </footer>
   );
